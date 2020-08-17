@@ -22,7 +22,8 @@ filter(iris, Petal.Length > 5)
 
 # multiple conditions
 filter(iris, Sepal.Length > 3, Species == 'setosa')
-filter(iris, Sepal.Length > 3, Petal.Length < 1.5, Species == 'setosa')
+filter(iris, Sepal.Length > 3, Petal.Length <= 1.5, Species == 'setosa')
+filter(iris, Sepal.Length >= 3, Petal.Length < 1.5, Species != 'setosa')
 
 
 # ---- Rename ----
